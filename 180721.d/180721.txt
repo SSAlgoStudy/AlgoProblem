@@ -1,0 +1,13 @@
+180721 스터디 과제
+
+중복 자료구조 : LinkedList, Double LinkedList
+준비할 자료구조 (과제) : HeapSort, QuickSort, Binary Search
+
+
+[ 함께 하면 좋은 문제들 ] 						 
+LinkedList : 백준 2161,2164, 1021, 3190						 
+Binary Search : 1539번
+해쉬문제 : 백준 1920
+HeapSort : 백준 2220번 , 11279, 1927
+
+
