@@ -1,0 +1,4 @@
+180728 스터디 과제
+
+중복 자료구조 : LinkedList, Double LinkedList, HeapSort, QuickSort, Binary Search
+준비할 자료구조 (과제) : Stack, Queue
