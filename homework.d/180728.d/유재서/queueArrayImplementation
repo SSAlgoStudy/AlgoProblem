@@ -1,0 +1,59 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<iostream>
+#define SIZE 10
+
+void enQueue(int);
+void deQueue();
+void display();
+
+int queue[SIZE], front = -1, rear = -1;
+
+void main()
+{
+  int value, choice;
+  while (1) {
+    printf("\n1.Insertion\n2. Deletion\n3. Display\n");
+    scanf("%d", &choice);
+    switch (choice) {
+    case 1: printf("VALUE : ");
+      scanf("%d", &value);
+      enQueue(value);
+      break;
+    case 2: deQueue();
+      break;
+    case 3: display();
+      break;
+    }
+  }
+}
+void enQueue(int value) {
+  if (rear == SIZE - 1)
+    printf("\nFull");
+  else {
+    if (front == -1)
+      front = 0;
+    rear++;
+    queue[rear] = value;
+    printf("\nINSERT,%d",value);
+  }
+}
+void deQueue() {
+  if (front == rear)
+    printf("\EMPTY");
+  else {
+    printf("\nDELETE : %d", queue[front]);
+    front++;
+    if (front == rear)
+      front = rear = -1;
+  }
+}
+void display() {
+  if (rear == -1)
+    printf("\nEMPTY");
+  else {
+    int i;
+
+    for (i = front; i <= rear; i++)
+      printf("%d\t", queue[i]);
+  }
+}
